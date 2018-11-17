@@ -1,8 +1,9 @@
 import json
 
+
 class Reader:
     def __init__(self):
-        print("Instantiating Reader class")
+        pass
 
     def readJSON(self, file):
         with open(file) as f:
