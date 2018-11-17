@@ -8,7 +8,3 @@ class Reader:
         with open(file) as f:
             data = json.load(f)
         return data
-
-r1 = Reader()
-data = r1.readJSON("../sample.json")
-print data["nodes"][1]
