@@ -1,10 +1,10 @@
 # lemonade
 A Scaffold for Containernet Tool - Build Python Files with One Configuration File
 
-##Usage
+## Usage
 define the `sample.json` file and run the `__init__.py` script. Check the console for outputs.
 
-##Sample Output
+## Sample Output
 ```python
 info('*** Adding docker containers\n')
 d1 = net.addDocker(ip="10.0.0.251", id="d1", dimage="ubuntu:trusty", name="my_iphone", )
