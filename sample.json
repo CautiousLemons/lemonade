@@ -1,9 +1,42 @@
 {
-  "nodes": [
-    "n1",
-    "n2"
+  "containers": [
+    {
+      "id": "d1",
+      "name" : "my_iphone",
+      "ip": "10.0.0.251",
+      "dimage": "ubuntu:trusty"
+    },
+    {
+      "id": "d2",
+      "name" : "my_laptop",
+      "ip": "10.0.0.252",
+      "dimage": "ubuntu:trusty"
+    }
+  ],
+  "switches": [
+    {
+      "id": "s1",
+      "name": "room1_switch"
+    },
+    {
+      "id": "s2",
+      "name": "room2_switch"
+    }
   ],
   "links": [
-    ["n1","n2"]
+    {
+      "from": "s1",
+      "to": "s2",
+      "bandwidth": "1Mbps",
+      "delay": "100ms"
+    },
+    {
+      "from": "d1",
+      "to": "s1"
+    },
+    {
+      "from": "d2",
+      "to": "s2"
+    }
   ]
 }
