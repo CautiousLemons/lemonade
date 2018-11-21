@@ -23,6 +23,8 @@
       "name": "room2_switch"
     }
   ],
+  "legacySwitches": [],
+  "legacyRouters": [],
   "links": [
     {
       "node1": "s1",
