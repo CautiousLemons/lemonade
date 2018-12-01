@@ -23,19 +23,21 @@
       "name": "room2_switch"
     }
   ],
+  "legacySwitches": [],
+  "legacyRouters": [],
   "links": [
     {
-      "from": "s1",
-      "to": "s2",
+      "node1": "s1",
+      "node2": "s2",
       "bandwidth": "1Mbps",
       "delay": "100ms"
     },
     {
-      "from": "d1",
+      "node1": "d1",
       "to": "s1"
     },
     {
-      "from": "d2",
+      "node2": "d2",
       "to": "s2"
     }
   ]
