@@ -1,0 +1,63 @@
+{
+  "containers": [
+    {
+      "id": "d1",
+      "name": "d1",
+      "ip": "10.0.0.251",
+      "dimage": "ubuntu:trusty",
+      "volumes": ""
+    },
+    {
+      "id": "d2",
+      "name": "d2",
+      "ip": "10.0.0.252",
+      "dimage": "ubuntu:trusty"
+    }
+  ],
+  "switches":[
+    {
+      "id": "s1",
+      "name": "s1"
+    },
+    {
+      "id": "s2",
+      "name": "s2"
+    },
+    {
+      "id": "s3",
+      "name": "s3"
+    }
+  ],
+  "links": [
+    {
+      "from": "s1",
+      "to": "d1",
+      "bandwidth": 1,
+      "delay": "100ms"
+    },
+    {
+      "from": "d1",
+      "to": "s2",
+      "bandwidth": 1,
+      "delay": "100ms"
+    },
+    {
+      "from": "s2",
+      "to": "s3",
+      "bandwidth": 1,
+      "delay": "100ms"
+    },
+    {
+      "from": "s3",
+      "to": "d2",
+      "bandwidth": 1,
+      "delay": "100ms"
+    },
+    {
+      "from": "d2",
+      "to": "s1",
+      "bandwidth": 1,
+      "delay": "100ms"
+    }
+  ]
+}
